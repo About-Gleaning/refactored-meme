@@ -1,7 +1,7 @@
 package com.liurui.api.memeapi.core.base;
 
 import com.google.common.base.Strings;
-import com.liurui.arsenal.base.bean.UserContext;
+import com.liurui.arsenal.base.web.bean.person.UserContext;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.servlet.http.HttpServletRequest;
