@@ -16,6 +16,7 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(Exception.class)
     public ResultBean exception(Exception e) {
+        e.printStackTrace();
         return ResultBean.fail();
     }
 
