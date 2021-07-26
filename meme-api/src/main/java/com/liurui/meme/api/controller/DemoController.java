@@ -1,7 +1,7 @@
-package com.liurui.api.memeapi.controller;
+package com.liurui.meme.api.controller;
 
 import com.alibaba.nacos.api.config.annotation.NacosValue;
-import com.liurui.api.memeapi.core.base.BaseController;
+import com.liurui.meme.api.core.base.BaseController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

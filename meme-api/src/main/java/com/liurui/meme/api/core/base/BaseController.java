@@ -1,4 +1,4 @@
-package com.liurui.api.memeapi.core.base;
+package com.liurui.meme.api.core.base;
 
 import com.google.common.base.Strings;
 import com.liurui.arsenal.base.web.bean.person.UserContext;

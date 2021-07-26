@@ -1,4 +1,4 @@
-package com.liurui.api.memeapi.core.config;
+package com.liurui.meme.api.core.config;
 
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;

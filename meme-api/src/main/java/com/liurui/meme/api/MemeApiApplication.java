@@ -1,4 +1,4 @@
-package com.liurui.api.memeapi;
+package com.liurui.meme.api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

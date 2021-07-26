@@ -1,4 +1,4 @@
-package com.liurui.api.memeapi.core.runner;
+package com.liurui.meme.api.core.runner;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;

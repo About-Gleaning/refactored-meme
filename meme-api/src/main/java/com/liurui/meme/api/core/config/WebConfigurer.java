@@ -1,6 +1,6 @@
-package com.liurui.api.memeapi.core.config;
+package com.liurui.meme.api.core.config;
 
-import com.liurui.api.memeapi.core.interceptor.UserContextInterceptor;
+import com.liurui.meme.api.core.interceptor.UserContextInterceptor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;

@@ -2,22 +2,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <parent>
         <groupId>com.liurui.meme</groupId>
         <artifactId>refactored-meme</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.liurui.api</groupId>
-    <artifactId>meme-api</artifactId>
+    <groupId>com.liurui.meme.core</groupId>
+    <artifactId>meme-core</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>meme-api</name>
-    <description>api层</description>
+    <name>meme-core</name>
+    <description>中心依赖</description>
     <properties>
         <java.version>11</java.version>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
     </properties>
     <packaging>jar</packaging>
 
@@ -28,20 +25,13 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
             <scope>compile</scope>
         </dependency>
-
-        <!-- 公共依赖-->
         <dependency>
-            <groupId>com.liurui.meme.core</groupId>
-            <artifactId>meme-core</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
         </dependency>
 
         <!-- nacos配置管理 -->

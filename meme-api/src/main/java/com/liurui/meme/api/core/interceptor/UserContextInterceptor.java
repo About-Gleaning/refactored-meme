@@ -1,4 +1,4 @@
-package com.liurui.api.memeapi.core.interceptor;
+package com.liurui.meme.api.core.interceptor;
 
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
