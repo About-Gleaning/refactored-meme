@@ -23,6 +23,7 @@
         <nacos-config.version>2.2.6.RELEASE</nacos-config.version>
         <nacos-discovery.version>2.2.6.RELEASE</nacos-discovery.version>
         <nacos-client.version>2.0.2</nacos-client.version>
+        <feign.version>1.4.7.RELEASE</feign.version>
     </properties>
 
     <dependencyManagement>
@@ -50,6 +51,11 @@
                 <groupId>com.alibaba.nacos</groupId>
                 <artifactId>nacos-client</artifactId>
                 <version>${nacos-client.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-feign</artifactId>
+                <version>${feign.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
