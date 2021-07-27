@@ -43,6 +43,12 @@
             <artifactId>meme-core</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+        <!-- 实体对象-->
+        <dependency>
+            <groupId>com.liurui.meme.bean</groupId>
+            <artifactId>meme-bean</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
 
         <!-- nacos配置管理 -->
         <dependency>
