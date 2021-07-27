@@ -9,3 +9,6 @@ spring:
   application:
     name: meme-api
 
+meme:
+  log:
+    path: C:\work_space\code\log\meme\meme-api\
