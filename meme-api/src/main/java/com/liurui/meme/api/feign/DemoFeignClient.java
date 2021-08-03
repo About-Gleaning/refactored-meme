@@ -1,7 +1,7 @@
 package com.liurui.meme.api.feign;
 
 import com.liurui.arsenal.base.web.bean.person.UserContext;
-import com.liurui.arsenal.base.web.bean.result.ResultBean;
+import com.liurui.arsenal.base.web.bean.result.BaseResult;
 import com.liurui.meme.bean.demo.Demo;
 import feign.Headers;
 import org.springframework.cloud.openfeign.FeignClient;
@@ -17,19 +17,19 @@ import org.springframework.web.bind.annotation.*;
 public interface DemoFeignClient {
 
 //    @RequestLine("GET /feign/get")
-//    ResultBean<String> get_requestLine(String say);
+//    BaseResult<String> get_requestLine(String say);
 
     /**
      * get url路径参数
      */
     @RequestMapping(value = "/pathvariable/{say}", method = RequestMethod.GET)
-    ResultBean<String> pathvariable(@PathVariable("say")String say);
+    BaseResult<String> pathvariable(@PathVariable("say")String say);
 
     /**
      * get 普通参数
      */
     @GetMapping(value = "/get")
-    ResultBean<String> get(String say);
+    BaseResult<String> get(String say);
 
     /**
      * get 参数为对象格式
@@ -37,7 +37,7 @@ public interface DemoFeignClient {
      * 所以用 Spring Cloud OpenFeign 提供的@SpringQueryMap
      */
     @GetMapping(value = "/get2")
-    ResultBean<UserContext> get2(@SpringQueryMap UserContext userContext);
+    BaseResult<UserContext> get2(@SpringQueryMap UserContext userContext);
 
     /**
      * post 表单 对象参数
@@ -47,14 +47,14 @@ public interface DemoFeignClient {
      * 入参的 @RequestBody 可以省
      */
     @PostMapping(value = "/post_form")
-    ResultBean<Demo> post_form(@RequestBody Demo demo);
+    BaseResult<Demo> post_form(@RequestBody Demo demo);
 
     /**
      * post 表单 普通参数
      * 入参的 @RequestParam 不能省
      */
     @PostMapping(value = "/post_form2")
-    ResultBean<Demo> post_form2(@RequestParam String name, @RequestParam Integer age);
+    BaseResult<Demo> post_form2(@RequestParam String name, @RequestParam Integer age);
 
     /**
      * post 表单 对象参数 + 普通参数
@@ -62,7 +62,7 @@ public interface DemoFeignClient {
      * 入参的 @RequestBody 可以省
      */
     @PostMapping(value = "/post_form3")
-    ResultBean<Demo> post_form3(@RequestBody Demo demo, @RequestParam String name2, @RequestParam Integer age2);
+    BaseResult<Demo> post_form3(@RequestBody Demo demo, @RequestParam String name2, @RequestParam Integer age2);
 
     /**
      * post json
@@ -72,5 +72,5 @@ public interface DemoFeignClient {
      */
     @PostMapping(value = "/post_json")
     @Headers({"Content-Type: application/json"})
-    ResultBean<Demo> post_json(Demo demo);
+    BaseResult<Demo> post_json(Demo demo);
 }
