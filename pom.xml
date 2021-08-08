@@ -24,6 +24,7 @@
         <nacos-discovery.version>2.2.6.RELEASE</nacos-discovery.version>
         <nacos-client.version>2.0.2</nacos-client.version>
         <feign.version>1.4.7.RELEASE</feign.version>
+        <mapstruct.version>1.4.2.Final</mapstruct.version>
     </properties>
 
     <dependencyManagement>
@@ -56,6 +57,12 @@
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-feign</artifactId>
                 <version>${feign.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct</artifactId>
+                <version>${mapstruct.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

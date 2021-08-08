@@ -7,3 +7,7 @@ spring:
       server-addr: 127.0.0.1:8848
   application:
     name: meme-person-center
+
+meme:
+  log:
+    path: /Users/liurui/Workspaces/IntelliJ\ IDEA/log
