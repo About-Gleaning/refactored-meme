@@ -11,4 +11,4 @@ spring:
 
 meme:
   log:
-    path: C:\work_space\code\log\meme\meme-api\
+    path: /Users/liurui/Workspaces/IntelliJ\ IDEA/log
