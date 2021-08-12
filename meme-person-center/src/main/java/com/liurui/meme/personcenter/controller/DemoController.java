@@ -1,4 +1,4 @@
-package com.liurui.meme.personcenter.action;
+package com.liurui.meme.personcenter.controller;
 
 import com.liurui.arsenal.base.web.bean.person.UserContext;
 import com.liurui.arsenal.base.web.bean.result.BaseResult;
@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
  */
 @RestController
 @RequestMapping("/demo")
-public class DemoAction {
+public class DemoController {
 
     @Autowired
     private DemoService demoService;
