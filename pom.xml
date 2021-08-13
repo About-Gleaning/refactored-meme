@@ -69,6 +69,11 @@
 
     <modules>
         <module>meme-api</module>
+        <module>meme-person-center</module>
+        <module>meme-gateway</module>
+        <module>meme-bean</module>
+        <module>meme-core</module>
+        <module>meme-sso</module>
     </modules>
 
 

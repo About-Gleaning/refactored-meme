@@ -11,4 +11,7 @@
 |Seata|分布式事务||
 |ELK|分布式日志||
 |Spring Security|安全框架|关于cas和OAuth2|
+|JWT|java web token||
 |mapstruct|对象拷贝||
+|RocketMQ|消息||
+|EvenBus|||
