@@ -3,7 +3,7 @@ package com.liurui.meme.api.controller;
 import com.alibaba.nacos.api.config.annotation.NacosValue;
 import com.liurui.arsenal.base.web.bean.person.UserContext;
 import com.liurui.arsenal.base.web.bean.result.BaseResult;
-import com.liurui.meme.api.core.base.BaseController;
+import com.liurui.meme.api.core.basic.BasicController;
 import com.liurui.meme.api.feign.DemoFeignClient;
 import com.liurui.meme.bean.demo.Demo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +16,7 @@ import org.springframework.web.client.RestTemplate;
 
 @RestController
 @RequestMapping("/demo")
-public class DemoController extends BaseController {
+public class DemoController extends BasicController {
 
     @NacosValue(value = "${useLocalCache:false}", autoRefreshed = true)
     private boolean useLocalCache;

@@ -27,7 +27,7 @@ public class GlobalExceptionHandler {
      * @return
      */
     @ExceptionHandler(ApiException.class)
-    public BaseResult apiException(Exception e) {
+    public BaseResult apiException(ApiException e) {
         LOGGER.error("apiException error", e);
         return BaseResult.fail(ErrorCodeMsg.API_ERROR);
     }
@@ -38,7 +38,7 @@ public class GlobalExceptionHandler {
      * @return
      */
     @ExceptionHandler(BusinessException.class)
-    public BaseResult businessException(Exception e) {
+    public BaseResult businessException(BusinessException e) {
         LOGGER.error("businessException error", e);
         return BaseResult.fail(ErrorCodeMsg.BUSINESS_ERROR);
     }

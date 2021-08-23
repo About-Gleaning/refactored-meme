@@ -15,3 +15,4 @@
 |mapstruct|对象拷贝||
 |RocketMQ|消息||
 |EvenBus|||
+|Tink|密码||

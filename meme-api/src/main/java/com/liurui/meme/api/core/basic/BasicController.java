@@ -1,4 +1,4 @@
-package com.liurui.meme.api.core.base;
+package com.liurui.meme.api.core.basic;
 
 import com.google.common.base.Strings;
 import com.liurui.arsenal.base.web.bean.person.UserContext;
@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-public class BaseController {
+public class BasicController {
 
     @Autowired
     private HttpServletRequest request;
