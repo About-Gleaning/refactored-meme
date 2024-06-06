@@ -4,7 +4,7 @@
 
     <!--    从配置文件读取日志存储地址-->
     <springProperty scope="context" name="logPath" source="meme.log.path"
-                    defaultValue="C:\work_space\code\log\meme\meme-api\"/>
+                    defaultValue="/Users/liurui/work_space/code/liurui/refactored-meme/log/meme-api/"/>
     <!--    定义日志输出格式-->
     <property name="LOG_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n"/>
     <!--    定义日志输出地址-->
